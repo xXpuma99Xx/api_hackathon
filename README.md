@@ -1,13 +1,15 @@
 # api_hackathon
 
 
-## Instala la db.
+## Instala la db
+
+### Crea una base de datos
 
 ```
 CREATE DATABASE <nombre de la base>;
 ```
 
-## Crea un archivo .env en la raiz de proyecto.
+### Crea un archivo .env en la raiz de proyecto.
 
 ```
 touch .env
