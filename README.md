@@ -1,6 +1,5 @@
 # api_hackathon
 
-
 ## Instala la db
 
 ### Crea una base de datos
@@ -34,4 +33,16 @@ npm install
 
 ```
 npm run install:db
+```
+
+## Iniciar el server de pruebas
+
+```
+npm run dev
+```
+
+## Iniciar el server
+
+```
+npm run produccion
 ```

@@ -5,9 +5,9 @@ var result = {}
 try {
   result = dotenv.config()
   if (result.error) throw result.error
-  console.log('El archivo .env cargado correctamente.'.green)
+  console.log('El archivo .env cargado correctamente.'.underline.bold.cyan)
 } catch (err) {
-  console.log('El archivo .env no se a cargado.'.red)
+  console.log('El archivo .env no se a cargado.'.underline.bold.red)
 }
 
 process.env.TYPEDB = process.env.TYPEDB
