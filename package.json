@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:db": "node ./src/config/test.js"
+    "test:db": "node ./src/config/test.js",
+    "install:db": "node ./src/models/install.js"
   },
   "repository": {
     "type": "git",
