@@ -9,7 +9,10 @@ const sequelize = new Sequelize(
     host: process.env.HOSTDB,
     dialect: process.env.TYPEDB,
     logging: false,
-    // timezone: "-05:00"
+    dialectOptions: {
+      useUTC: false,
+    },
+    timezone: '-05:00',
   }
 )
 
