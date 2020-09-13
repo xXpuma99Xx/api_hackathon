@@ -1,5 +1,5 @@
 const { DataTypes, Model } = require('sequelize')
-const sequelize = require("../../config/sequelize.conf")
+const sequelize = require('../../config/sequelize.conf')
 
 class Broker extends Model {}
 Broker.init(
@@ -19,10 +19,10 @@ Broker.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    logo: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
+    // logo: {
+    //   type: DataTypes.STRING,
+    //   allowNull: true,
+    // },
     descripcion: {
       type: DataTypes.TEXT,
       allowNull: false,

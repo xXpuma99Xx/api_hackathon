@@ -7,7 +7,6 @@ const Instrumento = require('./tables/Instrumento')
 const Perfil = require('./tables/Perfil')
 const PerfilInstrumento = require('./tables/PerfilInstrumento')
 const Titulo = require('./tables/Titulo')
-const { hasMany } = require('./tables/Broker')
 
 const drop = async () => {
   console.log('\nPaso 1) Desinstalando la db.'.bold.blue)
@@ -17,6 +16,9 @@ const drop = async () => {
 
   await PerfilInstrumento.drop()
   console.log('La tabla PerfilInstrumento se desinstalo correctamente.'.magenta)
+
+  await Titulo.drop()
+  console.log('La tabla Titulo se desinstalo correctamente.'.magenta)
 
   await Broker.drop()
   console.log('La tabla Broker se desinstalo correctamente.'.magenta)
@@ -29,9 +31,6 @@ const drop = async () => {
 
   await Perfil.drop()
   console.log('La tabla Perfil se desinstalo correctamente.'.magenta)
-
-  await Titulo.drop()
-  console.log('La tabla Titulo se desinstalo correctamente.'.magenta)
 }
 
 const sync = async () => {
@@ -48,6 +47,10 @@ const sync = async () => {
 
   await Perfil.sync()
   console.log('La tabla Perfil se instalo correctamente.'.magenta)
+
+  Instrumento.hasMany(Titulo, {
+    foreignKey: 'idInstrumento',
+  })
 
   await Titulo.sync()
   console.log('La tabla Titulo se instalo correctamente.'.magenta)

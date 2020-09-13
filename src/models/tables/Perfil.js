@@ -15,12 +15,16 @@ Perfil.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    foto: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
+    // foto: {
+    //   type: DataTypes.STRING,
+    //   allowNull: false,
+    // },
     descripcion: {
       type: DataTypes.TEXT,
+      allowNull: false,
+    },
+    calificacion: {
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
   },

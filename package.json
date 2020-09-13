@@ -6,6 +6,7 @@
   "scripts": {
     "test:db": "node ./src/config/test.js",
     "install:db": "node ./src/models/install.js",
+    "install:data": "node ./src/models/data.js",
     "dev": "nodemon ./src/app",
     "produccion": "node ./src/app"
   },

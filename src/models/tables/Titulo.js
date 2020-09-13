@@ -15,14 +15,14 @@ Titulo.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    nombreTicket: {
+    ticket: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    descripcion: {
-      type: DataTypes.TEXT,
-      allowNull: false,
-    },
+    // descripcion: {
+    //   type: DataTypes.TEXT,
+    //   allowNull: false,
+    // },
   },
   {
     sequelize,
