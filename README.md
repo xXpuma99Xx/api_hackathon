@@ -30,9 +30,11 @@ PORT = 3000
 ```
 npm install
 ```
-
 ```
 npm run install:db
+```
+```
+npm run install:data
 ```
 
 ## Iniciar el server de pruebas
