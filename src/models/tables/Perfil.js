@@ -4,7 +4,7 @@ const sequelize = require('../../config/sequelize.conf')
 class Perfil extends Model {}
 Perfil.init(
   {
-    Perfil: {
+    idPerfil: {
       type: DataTypes.INTEGER,
       primaryKey: true,
       allowNull: false,

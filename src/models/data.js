@@ -23,7 +23,7 @@ PerfilInstrumento.belongsTo(Instrumento, {
   foreignKey: 'idInstrumento',
 })
 
-Titulo.hasMany(Instrumento, {
+Titulo.belongsTo(Instrumento, {
   foreignKey: 'idInstrumento',
 })
 
@@ -129,7 +129,7 @@ const crearPerfiles = async () => {
     {
       nombre: 'Moderado',
       descripcion: `Tolera los riesgos moderados y le gusta mantener una pequeña parte de sus inversiones líquidas (disponibles a corto plazo) y otra parte mayor a mediano plazo.`,
-      calificacion: 20,
+      calificacion: 19,
     },
   ]
 
@@ -291,7 +291,7 @@ const install = async () => {
   console.log('\n')
 
   await crearBrokerTitulos()
-  console.log('\n')
+  process.exit()
 }
 
 install()
