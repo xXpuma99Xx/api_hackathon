@@ -198,7 +198,7 @@ Es adverso al riesgo ( prefiere alejarse de las
 perdidas, aunque gane un poco menos ). Le gusta
 saber con la mayor presición posible cuánto ganará 
 al final, porque le permite dormir más tranquilo.`,
-      calificacion: 40,
+      calificacion: 60,
     },
     {
       nombre: 'Moderado',
@@ -206,7 +206,7 @@ al final, porque le permite dormir más tranquilo.`,
 una pequeña parte de sus inversiones líquidas 
 (disponibles a corto plazo) y otra parte mayor a 
 mediano plazo.`,
-      calificacion: 19,
+      calificacion: 31,
     },
   ]
 
